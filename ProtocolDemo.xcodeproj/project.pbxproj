@@ -13,6 +13,11 @@
 		CA8E346E253E58EB005F9919 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA8E346C253E58EB005F9919 /* Main.storyboard */; };
 		CA8E3470253E58EE005F9919 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA8E346F253E58EE005F9919 /* Assets.xcassets */; };
 		CA8E3473253E58EE005F9919 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA8E3471253E58EE005F9919 /* LaunchScreen.storyboard */; };
+		CA8E347C253EFC26005F9919 /* DemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8E347B253EFC26005F9919 /* DemoView.swift */; };
+		CA8E347F253EFC39005F9919 /* DemoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA8E347E253EFC39005F9919 /* DemoView.xib */; };
+		CA8E3485253EFD4A005F9919 /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8E3483253EFD4A005F9919 /* CustomViewController.swift */; };
+		CA8E348A253EFD7F005F9919 /* CustomViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA8E3489253EFD7F005F9919 /* CustomViewController.storyboard */; };
+		CA8E348D253F0C07005F9919 /* DemoDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8E348C253F0C07005F9919 /* DemoDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,12 @@
 		CA8E346F253E58EE005F9919 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA8E3472253E58EE005F9919 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA8E3474253E58EE005F9919 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA8E347B253EFC26005F9919 /* DemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoView.swift; sourceTree = "<group>"; };
+		CA8E347E253EFC39005F9919 /* DemoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DemoView.xib; sourceTree = "<group>"; };
+		CA8E3481253EFCCB005F9919 /* ProtocolDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ProtocolDemo.entitlements; sourceTree = "<group>"; };
+		CA8E3483253EFD4A005F9919 /* CustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
+		CA8E3489253EFD7F005F9919 /* CustomViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomViewController.storyboard; sourceTree = "<group>"; };
+		CA8E348C253F0C07005F9919 /* DemoDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +67,15 @@
 		CA8E3465253E58EB005F9919 /* ProtocolDemo */ = {
 			isa = PBXGroup;
 			children = (
+				CA8E3481253EFCCB005F9919 /* ProtocolDemo.entitlements */,
 				CA8E3466253E58EB005F9919 /* AppDelegate.swift */,
 				CA8E3468253E58EB005F9919 /* SceneDelegate.swift */,
 				CA8E346A253E58EB005F9919 /* ViewController.swift */,
+				CA8E3483253EFD4A005F9919 /* CustomViewController.swift */,
+				CA8E348C253F0C07005F9919 /* DemoDelegate.swift */,
+				CA8E3489253EFD7F005F9919 /* CustomViewController.storyboard */,
+				CA8E347B253EFC26005F9919 /* DemoView.swift */,
+				CA8E347E253EFC39005F9919 /* DemoView.xib */,
 				CA8E346C253E58EB005F9919 /* Main.storyboard */,
 				CA8E346F253E58EE005F9919 /* Assets.xcassets */,
 				CA8E3471253E58EE005F9919 /* LaunchScreen.storyboard */,
@@ -125,8 +142,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA8E3473253E58EE005F9919 /* LaunchScreen.storyboard in Resources */,
+				CA8E347F253EFC39005F9919 /* DemoView.xib in Resources */,
 				CA8E3470253E58EE005F9919 /* Assets.xcassets in Resources */,
 				CA8E346E253E58EB005F9919 /* Main.storyboard in Resources */,
+				CA8E348A253EFD7F005F9919 /* CustomViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +157,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA8E346B253E58EB005F9919 /* ViewController.swift in Sources */,
+				CA8E348D253F0C07005F9919 /* DemoDelegate.swift in Sources */,
+				CA8E347C253EFC26005F9919 /* DemoView.swift in Sources */,
+				CA8E3485253EFD4A005F9919 /* CustomViewController.swift in Sources */,
 				CA8E3467253E58EB005F9919 /* AppDelegate.swift in Sources */,
 				CA8E3469253E58EB005F9919 /* SceneDelegate.swift in Sources */,
 			);
@@ -286,6 +308,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ProtocolDemo/ProtocolDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EYTHSR6MP4;
 				INFOPLIST_FILE = ProtocolDemo/Info.plist;
@@ -295,6 +318,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Hamoonjm.ProtocolDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -305,6 +329,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ProtocolDemo/ProtocolDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EYTHSR6MP4;
 				INFOPLIST_FILE = ProtocolDemo/Info.plist;
@@ -314,6 +339,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Hamoonjm.ProtocolDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

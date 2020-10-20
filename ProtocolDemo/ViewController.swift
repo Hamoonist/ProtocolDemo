@@ -7,13 +7,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, DemoDelegate {
 
+	@IBOutlet weak var demoView: DemoView!
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		demoView.delegate = self
 		// Do any additional setup after loading the view.
 	}
-
-
 }
 
